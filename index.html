@@ -32,27 +32,25 @@
 
         let searchQuery = document.getElementById("searchBox1").value;
 
-        let links = [//];
+        let links =
+        [
           "https://trends.google.com/trends/explore?date=all&geo=ID&q=" + searchQuery
-        , "https://www.facebook.com/marketplace/jakarta/search/?query=" + searchQuery
-        , "https://www.google.com/search?q=" + searchQuery + "&tbm=shop"
-        , "https://shopee.co.id/search?keyword=" + searchQuery
-        , "https://www.tokopedia.com/search?st=product&q=" + searchQuery
-        , "https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=" + searchQuery
-        , "https://www.jd.id/search?keywords=" + searchQuery
-        , "https://www.lazada.co.id/catalog/?q=" + searchQuery
-        , "https://www.olx.co.id/items/q-" + searchQuery.replace(" ", "-")
-        , "https://www.bhinneka.com/jual?cari=" + searchQuery.replace(" ", "+")
+          , "https://www.facebook.com/marketplace/jakarta/search/?query=" + searchQuery
+          , "https://www.google.com/search?q=" + searchQuery + "&tbm=shop"
+          , "https://shopee.co.id/search?keyword=" + searchQuery
+          , "https://www.tokopedia.com/search?st=product&q=" + searchQuery
+          , "https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=" + searchQuery
+          , "https://www.jd.id/search?keywords=" + searchQuery
+          , "https://www.lazada.co.id/catalog/?q=" + searchQuery
+          , "https://www.olx.co.id/items/q-" + searchQuery.replace(" ", "-")
+          , "https://www.bhinneka.com/jual?cari=" + searchQuery.replace(" ", "+")
         ];
 
         let allLinks = " ";
 
-        //for (let i = 0; i < links.length; i++) {
         for (let i = links.length - 1; i > -1; i--) {
           allLinks +=  wrapInAnchor( links[i], links.length - i);
         }
-
-        console.log("semua linknya adalah berikut " + allLinks);
 
         let myNav = document.querySelector("#searchLinks");
 

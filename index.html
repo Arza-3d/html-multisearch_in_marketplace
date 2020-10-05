@@ -32,18 +32,18 @@
 
         let searchQuery = document.getElementById("searchBox1").value;
 
-        let links = [];
-
-        links[0] = "https://www.google.com/search?q=" + searchQuery + "&tbm=shop";
-        links[1] = "https://shopee.co.id/search?keyword=" + searchQuery;
-        links[2] = "https://www.tokopedia.com/search?st=product&q=" + searchQuery;
-        links[3] = "https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=" + searchQuery;
-        links[4] = "https://www.jd.id/search?keywords=" + searchQuery;
-        links[5] = "https://www.lazada.co.id/catalog/?q=" + searchQuery;
-        links[6] = "https://www.olx.co.id/items/q-" + searchQuery.replace(" ", "-");
-        links[7] = "https://www.bhinneka.com/jual?cari=" + searchQuery.replace(" ", "+");
-        links[8] = "https://trends.google.com/trends/explore?date=all&geo=ID&q=" + searchQuery;
-        links[9] = "https://www.facebook.com/marketplace/jakarta/search/?query=" + searchQuery;
+        let links = [//];
+          "https://trends.google.com/trends/explore?date=all&geo=ID&q=" + searchQuery
+        , "https://www.facebook.com/marketplace/jakarta/search/?query=" + searchQuery
+        , "https://www.google.com/search?q=" + searchQuery + "&tbm=shop"
+        , "https://shopee.co.id/search?keyword=" + searchQuery
+        , "https://www.tokopedia.com/search?st=product&q=" + searchQuery
+        , "https://www.bukalapak.com/products?from=omnisearch&from_keyword_history=false&search%5Bkeywords%5D=" + searchQuery
+        , "https://www.jd.id/search?keywords=" + searchQuery
+        , "https://www.lazada.co.id/catalog/?q=" + searchQuery
+        , "https://www.olx.co.id/items/q-" + searchQuery.replace(" ", "-")
+        , "https://www.bhinneka.com/jual?cari=" + searchQuery.replace(" ", "+")
+        ];
 
         let allLinks = " ";
 
